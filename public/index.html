@@ -53,26 +53,25 @@
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">The outsourced in-house eCommerce department</p>
-          <h1>The eCom team your brand <em>should</em> already have.</h1>
-          <p class="lead">Brand X Commerce embeds with growing retailers as a fully integrated commerce department — strategy, development, growth marketing, CRO and retention — replacing the patchwork of agencies, freelancers and unfilled job reqs.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="#contact">Claim your free audit</a>
-            <a class="btn btn-ghost btn-lg" href="#services">See what we do</a>
-          </div>
-          <ul class="hero-proof">
-            <li><strong>30&ndash;40%</strong><span>more profitable on average post-switch</span></li>
-            <li><strong>$1B+</strong><span>in online sales driven</span></li>
-            <li><strong>500+</strong><span>launches &amp; replatforms</span></li>
-          </ul>
+    <section class="hero hero-photo" id="top">
+      <div class="hero-photo-bg" aria-hidden="true" style="background-image: url('images/team-hero.jpg');"></div>
+      <div class="hero-photo-overlay" aria-hidden="true"></div>
+      <div class="container hero-photo-content">
+        <h1 class="hero-photo-h1">
+          The <span class="hl-green">outsourced</span><br />
+          <span class="hl-green">in&#8209;house</span><br />
+          eCommerce department.
+        </h1>
+        <p class="hero-photo-sub">Operator-led eCommerce Support &amp; Marketing.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#contact">Claim your free audit</a>
+          <a class="btn btn-ghost btn-ghost-light btn-lg" href="#services">See what we do</a>
         </div>
-        <div class="hero-visual">
-          <img src="images/hero-collage.svg" alt="Brand X Commerce — every surface of an eCommerce business in one view: storefront on phone, live revenue dashboard, Loyalest loyalty card, Klaviyo email, ShopGap AI citation badge, and the embedded Brand X team avatars." />
-        </div>
+        <ul class="hero-proof hero-proof-light">
+          <li><strong>30&ndash;40%</strong><span>more profitable on average post-switch</span></li>
+          <li><strong>$1B+</strong><span>in online sales driven</span></li>
+          <li><strong>500+</strong><span>launches &amp; replatforms</span></li>
+        </ul>
       </div>
     </section>
 
@@ -138,13 +137,20 @@
       <div class="container">
         <header class="section-header">
           <p class="eyebrow">What we do</p>
-          <h2>Everything an in-house eCom department does — done by people who&rsquo;ve done it.</h2>
+          <h2>Everything an in-house eCom department does &mdash; done by people who&rsquo;ve done it.</h2>
         </header>
+
+        <figure class="services-banner">
+          <img src="images/hero-collage.svg" alt="Brand X Commerce — every surface of an eCommerce business in one view: storefront on phone, live revenue dashboard, Loyalest loyalty card, Klaviyo email, ShopGap AI citation badge, and the embedded Brand X team avatars." />
+          <figcaption>Storefront, paid media, lifecycle, loyalty, CRO, AI discovery &mdash; one team in your Slack.</figcaption>
+        </figure>
+
         <div class="service-grid">
           <article class="service-card" id="services-web">
+            <div class="svc-visual"><img src="images/svc-web.svg" alt="" loading="lazy" /></div>
             <div class="service-num">01</div>
             <h3>Web &amp; Shopify Development</h3>
-            <p>Shopify Plus builds, replatforms, theme engineering, headless front-ends and the unglamorous day-to-day site support most agencies hate. We&rsquo;re Shopify and Klaviyo partners with a put-points-on-the-board approach — bugs fixed in days, not sprints.</p>
+            <p>Shopify Plus builds, replatforms, theme engineering, headless front-ends and the unglamorous day-to-day site support most agencies hate. We&rsquo;re Shopify and Klaviyo partners with a put-points-on-the-board approach &mdash; bugs fixed in days, not sprints.</p>
             <ul class="micro-list">
               <li>Shopify Plus development &amp; replatforms</li>
               <li>Theme customization &amp; performance tuning</li>
@@ -154,9 +160,10 @@
           </article>
 
           <article class="service-card" id="services-growth">
+            <div class="svc-visual"><img src="images/svc-growth.svg" alt="" loading="lazy" /></div>
             <div class="service-num">02</div>
             <h3>Growth Marketing</h3>
-            <p>Paid media that gets graded on incremental, profitable revenue — not platform fairy tales. We run Meta, Google, TikTok and emerging AI-surface placements with a single P&amp;L view across channels, creative testing pipelines and rigorous post-purchase attribution.</p>
+            <p>Paid media that gets graded on incremental, profitable revenue &mdash; not platform fairy tales. We run Meta, Google, TikTok and emerging AI-surface placements with a single P&amp;L view across channels, creative testing pipelines and rigorous post-purchase attribution.</p>
             <ul class="micro-list">
               <li>Paid social, search &amp; AI-surface acquisition</li>
               <li>Creative testing &amp; landing page pairing</li>
@@ -166,9 +173,10 @@
           </article>
 
           <article class="service-card service-featured" id="services-cro">
+            <div class="svc-visual"><img src="images/svc-cro.svg" alt="" loading="lazy" /></div>
             <div class="service-num">03</div>
             <h3>CRO &amp; Business Intelligence</h3>
-            <p>Turn your store into a conversion machine. Heat maps, profit-centric dashboards, UX teardowns and a relentless A/B testing cadence — powered by our proprietary <a href="#tool-abe">Abe CRO</a> testing platform, included free with every retainer.</p>
+            <p>Turn your store into a conversion machine. Heat maps, profit-centric dashboards, UX teardowns and a relentless A/B testing cadence &mdash; powered by our proprietary <a href="#tool-abe">Abe CRO</a> testing platform, included free with every retainer.</p>
             <ul class="micro-list">
               <li>Funnel &amp; checkout optimization</li>
               <li>Theme &amp; template A/B testing via Abe CRO</li>
@@ -179,9 +187,10 @@
           </article>
 
           <article class="service-card" id="services-strategy">
+            <div class="svc-visual"><img src="images/svc-strategy.svg" alt="" loading="lazy" /></div>
             <div class="service-num">04</div>
             <h3>eCommerce Strategy</h3>
-            <p>Quarterly planning, channel mix, pricing &amp; promo architecture, merchandising calendars, tech stack rationalization. The thinking work most operators never get time for — done by people who&rsquo;ve owned the P&amp;L themselves.</p>
+            <p>Quarterly planning, channel mix, pricing &amp; promo architecture, merchandising calendars, tech stack rationalization. The thinking work most operators never get time for &mdash; done by people who&rsquo;ve owned the P&amp;L themselves.</p>
             <ul class="micro-list">
               <li>Annual &amp; quarterly growth roadmaps</li>
               <li>Tech stack &amp; vendor consolidation</li>
@@ -191,9 +200,10 @@
           </article>
 
           <article class="service-card service-featured" id="services-loyalty">
+            <div class="svc-visual"><img src="images/svc-loyalty.svg" alt="" loading="lazy" /></div>
             <div class="service-num">05</div>
             <h3>Retention &amp; Loyalty</h3>
-            <p>Email, SMS, post-purchase, win-back and a loyalty program your customers actually use. We deploy <a href="#tool-loyalest">Loyalest</a>, our retail-focused loyalty platform, free for clients — built specifically because most loyalty programs are dead weight.</p>
+            <p>Email, SMS, post-purchase, win-back and a loyalty program your customers actually use. We deploy <a href="#tool-loyalest">Loyalest</a>, our retail-focused loyalty platform, free for clients &mdash; built specifically because most loyalty programs are dead weight.</p>
             <ul class="micro-list">
               <li>Lifecycle &amp; segmentation strategy</li>
               <li>Loyalty program design &amp; deployment</li>
@@ -204,9 +214,10 @@
           </article>
 
           <article class="service-card service-featured" id="services-ai">
+            <div class="svc-visual"><img src="images/svc-ai.svg" alt="" loading="lazy" /></div>
             <div class="service-num">06</div>
             <h3>AI Discovery Readiness</h3>
-            <p>ChatGPT, Perplexity, Google AI Overviews and Claude are the new search results page. We use <a href="#tool-shopgap">ShopGap AI</a> — our proprietary tool — to make your Shopify catalog legible, citable and recommendable to the LLMs your next customer is already asking.</p>
+            <p>ChatGPT, Perplexity, Google AI Overviews and Claude are the new search results page. We use <a href="#tool-shopgap">ShopGap AI</a> &mdash; our proprietary tool &mdash; to make your Shopify catalog legible, citable and recommendable to the LLMs your next customer is already asking.</p>
             <ul class="micro-list">
               <li>LLM-readable catalog &amp; PDP structuring</li>
               <li>Schema, feeds &amp; entity optimization</li>

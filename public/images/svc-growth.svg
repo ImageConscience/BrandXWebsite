@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Growth marketing — multi-channel ad creative with channel chips and ROAS metric">
+  <defs>
+    <linearGradient id="grBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f8f7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="grAd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f5022"/>
+      <stop offset="1" stop-color="#388E3C"/>
+    </linearGradient>
+    <linearGradient id="grAd2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cceecc"/>
+      <stop offset="1" stop-color="#7bbf7e"/>
+    </linearGradient>
+    <filter id="grShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#grBg)"/>
+
+  <!-- Main creative card -->
+  <g filter="url(#grShadow)">
+    <rect x="34" y="22" width="170" height="156" rx="12" fill="url(#grAd)"/>
+    <!-- spotlight -->
+    <ellipse cx="120" cy="60" rx="80" ry="40" fill="#ffffff" opacity="0.12"/>
+    <!-- product silhouette -->
+    <rect x="76" y="46" width="86" height="68" rx="10" fill="#cceecc" opacity="0.95"/>
+    <path d="M 92,104 C 92,90 100,86 110,86 L 134,86 C 144,86 150,92 154,98 C 158,104 156,108 152,112 L 92,112 Z" fill="#1f5022" opacity="0.7"/>
+    <ellipse cx="104" cy="98" rx="6" ry="8" fill="#1f5022" opacity="0.85"/>
+    <!-- 30% off sticker -->
+    <circle cx="172" cy="42" r="22" fill="#ffffff"/>
+    <text x="172" y="40" text-anchor="middle" font-family="Poppins, sans-serif" font-size="11" font-weight="800" fill="#1f5022">30%</text>
+    <text x="172" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1f5022" letter-spacing="0.4">OFF</text>
+    <!-- copy -->
+    <text x="48" y="134" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="-0.2">Spring drop is live</text>
+    <rect x="48" y="142" width="78" height="20" rx="10" fill="#ffffff"/>
+    <text x="87" y="155" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#1f5022">Shop now →</text>
+  </g>
+
+  <!-- Right column: channels + metric -->
+  <g transform="translate(220, 22)">
+    <text x="0" y="10" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#5b5b5b" letter-spacing="0.8">RUNNING ON</text>
+
+    <g filter="url(#grShadow)">
+      <rect x="0" y="18" width="150" height="28" rx="14" fill="#ffffff" stroke="#e7e7e7"/>
+      <circle cx="18" cy="32" r="8" fill="#1877f2"/>
+      <text x="18" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#fff">f</text>
+      <text x="32" y="36" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#181818">Meta · 4.2x ROAS</text>
+
+      <rect x="0" y="52" width="150" height="28" rx="14" fill="#ffffff" stroke="#e7e7e7"/>
+      <circle cx="18" cy="66" r="8" fill="#ea4335"/>
+      <text x="18" y="69" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#fff">G</text>
+      <text x="32" y="70" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#181818">Google · 3.8x ROAS</text>
+
+      <rect x="0" y="86" width="150" height="28" rx="14" fill="#ffffff" stroke="#e7e7e7"/>
+      <circle cx="18" cy="100" r="8" fill="#181818"/>
+      <text x="18" y="103" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#cceecc">T</text>
+      <text x="32" y="104" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#181818">TikTok · 2.6x ROAS</text>
+    </g>
+
+    <g filter="url(#grShadow)">
+      <rect x="0" y="124" width="150" height="32" rx="10" fill="#cceecc"/>
+      <text x="12" y="139" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#1f5022" letter-spacing="0.5">NEW CUSTOMERS</text>
+      <text x="12" y="153" font-family="Poppins, sans-serif" font-size="13" font-weight="700" fill="#1f5022" letter-spacing="-0.3">+34% MoM</text>
+      <text x="138" y="153" text-anchor="end" font-family="Inter, sans-serif" font-size="14" fill="#1f5022">↗</text>
+    </g>
+  </g>
+</svg>

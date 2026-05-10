@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="AI discovery — ChatGPT-style answer with brand product cited as a top recommendation via ShopGap AI">
+  <defs>
+    <linearGradient id="aiBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f8f7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="aiShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#aiBg)"/>
+
+  <g filter="url(#aiShadow)">
+    <rect x="20" y="22" width="360" height="156" rx="12" fill="#ffffff" stroke="#e7e7e7"/>
+
+    <!-- header / app -->
+    <rect x="20" y="22" width="360" height="22" rx="12" fill="#181818"/>
+    <rect x="20" y="38" width="360" height="6" fill="#181818"/>
+    <line x1="20" y1="44" x2="380" y2="44" stroke="#000"/>
+    <circle cx="34" cy="33" r="6" fill="#cceecc"/>
+    <text x="34" y="36" text-anchor="middle" font-family="Poppins, sans-serif" font-size="8" font-weight="800" fill="#1f5022">AI</text>
+    <text x="46" y="36" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#cceecc">ChatGPT</text>
+    <rect x="318" y="28" width="50" height="12" rx="6" fill="#cceecc"/>
+    <text x="343" y="37" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="800" fill="#1f5022">SHOPGAP</text>
+
+    <!-- user message -->
+    <rect x="120" y="56" width="244" height="22" rx="11" fill="#f1f1f1"/>
+    <text x="132" y="70" font-family="Inter, sans-serif" font-size="9" fill="#181818">best running shoes under $150 for trail use?</text>
+    <circle cx="368" cy="67" r="6" fill="#181818"/>
+    <text x="368" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#fff">Y</text>
+
+    <!-- AI response -->
+    <text x="34" y="98" font-family="Inter, sans-serif" font-size="9" fill="#181818">Top picks based on grip, drop and value:</text>
+
+    <!-- citation 1 — highlighted (your brand) -->
+    <rect x="34" y="106" width="332" height="34" rx="10" fill="#cceecc" stroke="#388E3C" stroke-width="1.5"/>
+    <rect x="42" y="114" width="20" height="18" rx="4" fill="#388E3C"/>
+    <text x="52" y="126" text-anchor="middle" font-family="Poppins, sans-serif" font-size="9" font-weight="800" fill="#cceecc">1</text>
+    <text x="70" y="122" font-family="Poppins, sans-serif" font-size="10" font-weight="700" fill="#1f5022">Trail Runner Pro</text>
+    <text x="70" y="134" font-family="Inter, sans-serif" font-size="8" fill="#1f5022">your-store.com · $148 · 4.8★</text>
+    <rect x="296" y="116" width="62" height="14" rx="7" fill="#388E3C"/>
+    <text x="327" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="800" fill="#fff">CITED</text>
+
+    <!-- citation 2 — competitor -->
+    <rect x="34" y="146" width="332" height="22" rx="10" fill="#f7f8f7"/>
+    <rect x="42" y="151" width="14" height="12" rx="3" fill="#5b5b5b"/>
+    <text x="49" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#fff">2</text>
+    <text x="64" y="161" font-family="Inter, sans-serif" font-size="9" fill="#5b5b5b">Competitor brand · $139</text>
+  </g>
+</svg>
