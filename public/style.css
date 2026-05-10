@@ -327,27 +327,7 @@ section { padding: 90px 0; }
   color: #fff;
 }
 .proprietary .eyebrow { color: var(--c-mint); }
-.dashboard-showcase {
-  margin: 0 auto 64px;
-  max-width: 520px;
-  text-align: center;
-}
-.dashboard-showcase img {
-  width: 100%; height: auto;
-  border-radius: var(--radius-lg);
-  box-shadow:
-    0 40px 80px -20px rgba(0,0,0,0.55),
-    0 0 0 1px rgba(204,238,204,0.18),
-    0 0 60px -10px rgba(56,142,60,0.35);
-  background: #ffffff;
-}
-.dashboard-showcase figcaption {
-  color: rgba(255,255,255,0.68);
-  font-size: 0.92rem; margin-top: 18px; font-style: italic;
-  max-width: 32em; margin-left: auto; margin-right: auto;
-}
-
-.tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 8px; }
 .tool-card {
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.12);
