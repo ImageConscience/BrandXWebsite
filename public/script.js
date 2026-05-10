@@ -20,7 +20,7 @@ mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
 const yr = document.getElementById('yr');
 if (yr) yr.textContent = new Date().getFullYear();
 
-// Lead form: progressive enhancement — submit via fetch and show inline confirmation
+// Lead form: progressive enhancement — submit to Formspree as JSON and show inline confirmation
 const form = document.querySelector('.lead-form');
 form?.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -28,11 +28,11 @@ form?.addEventListener('submit', async (e) => {
   const fine = form.querySelector('.form-fine');
   btn.disabled = true; btn.textContent = 'Sending…';
   try {
-    const data = new URLSearchParams(new FormData(form));
+    const payload = Object.fromEntries(new FormData(form).entries());
     const res = await fetch(form.action, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: data.toString()
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
     });
     if (!res.ok) throw new Error('bad response');
     form.innerHTML = '<h3>Thanks — we\'ll be in touch within one business day.</h3><p>A senior Brand X principal will review your store and reply personally to the email you provided.</p>';
