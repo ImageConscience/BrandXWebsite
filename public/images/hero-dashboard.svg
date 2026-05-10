@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" role="img" aria-labelledby="dashTitle" preserveAspectRatio="xMidYMid meet">
+  <title id="dashTitle">A Brand X Commerce client analytics dashboard</title>
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f7f8f7"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#388E3C" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#388E3C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#388E3C"/>
+      <stop offset="1" stop-color="#7bbf7e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer card -->
+  <rect x="0" y="0" width="600" height="750" rx="22" fill="url(#bgGrad)"/>
+
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="600" height="46" fill="#ffffff"/>
+  <line x1="0" y1="46" x2="600" y2="46" stroke="#e7e7e7" stroke-width="1"/>
+  <circle cx="22" cy="23" r="5" fill="#e74c3c" opacity="0.65"/>
+  <circle cx="40" cy="23" r="5" fill="#f1c40f" opacity="0.65"/>
+  <circle cx="58" cy="23" r="5" fill="#388E3C" opacity="0.7"/>
+  <rect x="180" y="13" width="240" height="22" rx="11" fill="#f1f1f1"/>
+  <text x="300" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#5b5b5b">brandxcommerce.com/client-dashboard</text>
+
+  <!-- Revenue header -->
+  <g transform="translate(28, 76)">
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#5b5b5b" letter-spacing="1">REVENUE · LAST 30 DAYS</text>
+    <text x="0" y="44" font-family="Poppins, sans-serif" font-size="42" font-weight="700" fill="#181818" letter-spacing="-2">$847,392</text>
+    <g transform="translate(232, 18)">
+      <rect x="0" y="0" width="78" height="26" rx="13" fill="#e8f6e6"/>
+      <text x="39" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#1f5022">↑ 38.4%</text>
+    </g>
+  </g>
+
+  <!-- Chart -->
+  <g transform="translate(28, 144)">
+    <line x1="0" y1="0" x2="544" y2="0" stroke="#f1f1f1" stroke-width="1"/>
+    <line x1="0" y1="50" x2="544" y2="50" stroke="#f1f1f1" stroke-width="1"/>
+    <line x1="0" y1="100" x2="544" y2="100" stroke="#f1f1f1" stroke-width="1"/>
+    <line x1="0" y1="150" x2="544" y2="150" stroke="#f1f1f1" stroke-width="1"/>
+    <path d="M 0,140 C 50,135 80,120 140,118 S 220,92 290,86 S 380,52 460,38 L 544,28 L 544,180 L 0,180 Z" fill="url(#chartFill)"/>
+    <path d="M 0,140 C 50,135 80,120 140,118 S 220,92 290,86 S 380,52 460,38 L 544,28" fill="none" stroke="#388E3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="544" cy="28" r="6" fill="#ffffff" stroke="#388E3C" stroke-width="2.5"/>
+  </g>
+
+  <!-- KPI tiles -->
+  <g transform="translate(28, 360)">
+    <g>
+      <rect x="0" y="0" width="172" height="84" rx="12" fill="#ffffff" stroke="#e7e7e7"/>
+      <text x="16" y="22" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#5b5b5b" letter-spacing="0.8">AOV</text>
+      <text x="16" y="50" font-family="Poppins, sans-serif" font-size="22" font-weight="700" fill="#181818" letter-spacing="-1">$128.40</text>
+      <text x="16" y="70" font-family="Inter, sans-serif" font-size="11" fill="#388E3C" font-weight="600">+12.1%</text>
+    </g>
+    <g transform="translate(186, 0)">
+      <rect x="0" y="0" width="172" height="84" rx="12" fill="#ffffff" stroke="#e7e7e7"/>
+      <text x="16" y="22" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#5b5b5b" letter-spacing="0.8">CONVERSION</text>
+      <text x="16" y="50" font-family="Poppins, sans-serif" font-size="22" font-weight="700" fill="#181818" letter-spacing="-1">3.84%</text>
+      <text x="16" y="70" font-family="Inter, sans-serif" font-size="11" fill="#388E3C" font-weight="600">+0.62 pts</text>
+    </g>
+    <g transform="translate(372, 0)">
+      <rect x="0" y="0" width="172" height="84" rx="12" fill="#ffffff" stroke="#e7e7e7"/>
+      <text x="16" y="22" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#5b5b5b" letter-spacing="0.8">CONTRIB MARGIN</text>
+      <text x="16" y="50" font-family="Poppins, sans-serif" font-size="22" font-weight="700" fill="#181818" letter-spacing="-1">42.7%</text>
+      <text x="16" y="70" font-family="Inter, sans-serif" font-size="11" fill="#388E3C" font-weight="600">+8.4 pts</text>
+    </g>
+  </g>
+
+  <!-- Active tests panel -->
+  <g transform="translate(28, 478)">
+    <rect x="0" y="0" width="544" height="244" rx="12" fill="#ffffff" stroke="#e7e7e7"/>
+    <text x="20" y="30" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#181818" letter-spacing="0.8">ACTIVE A/B TESTS · ABE CRO</text>
+    <rect x="218" y="16" width="44" height="20" rx="10" fill="#cceecc"/>
+    <text x="240" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1f5022">LIVE</text>
+
+    <g transform="translate(20, 56)">
+      <text x="0" y="14" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#181818">Theme: Spring rebuild vs control</text>
+      <text x="0" y="30" font-family="Inter, sans-serif" font-size="11" fill="#5b5b5b">12,840 sessions · 99% confidence</text>
+      <rect x="0" y="42" width="504" height="6" rx="3" fill="#f1f1f1"/>
+      <rect x="0" y="42" width="408" height="6" rx="3" fill="url(#bar1)"/>
+      <rect x="430" y="36" width="74" height="20" rx="10" fill="#e8f6e6"/>
+      <text x="467" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1f5022">+18.2% CR</text>
+    </g>
+
+    <g transform="translate(20, 128)">
+      <text x="0" y="14" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#181818">PDP: Sticky add-to-cart drawer</text>
+      <text x="0" y="30" font-family="Inter, sans-serif" font-size="11" fill="#5b5b5b">8,210 sessions · 92% confidence</text>
+      <rect x="0" y="42" width="504" height="6" rx="3" fill="#f1f1f1"/>
+      <rect x="0" y="42" width="276" height="6" rx="3" fill="url(#bar1)"/>
+      <rect x="430" y="36" width="74" height="20" rx="10" fill="#fff6d6"/>
+      <text x="467" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#7a5a00">+6.4% AOV</text>
+    </g>
+
+    <g transform="translate(20, 200)">
+      <text x="0" y="14" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#181818">Loyalest tier restructure</text>
+      <text x="0" y="30" font-family="Inter, sans-serif" font-size="11" fill="#5b5b5b">Replenishment-aligned tiers · week 6</text>
+      <rect x="430" y="6" width="74" height="20" rx="10" fill="#e8f6e6"/>
+      <text x="467" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1f5022">+22% engaged</text>
+    </g>
+  </g>
+</svg>
