@@ -1,0 +1,248 @@
+/* Brand X Commerce — design tokens.
+   Vendored verbatim from the design-system handoff (design-system/tokens/*.css).
+   The webfont @import was moved to a <link> in each page head. */
+
+/* ===== tokens/fonts.css ===== */
+/* Brand X Commerce — webfonts.
+   SUBSTITUTION NOTE: no font binaries were available from the source, so these are
+   Google Fonts stand-ins chosen for closeness to a Swiss neutral grotesk program.
+   Replace the @import below with self-hosted @font-face rules when licensed files arrive. */
+
+:root {
+  --bx-font-display: "Schibsted Grotesk", "Helvetica Neue", Helvetica, sans-serif;
+  --bx-font-body: "Instrument Sans", "Helvetica Neue", Helvetica, sans-serif;
+  --bx-font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+/* ===== tokens/colors.css ===== */
+/* Brand X Commerce — base color ramps. Semantic aliases live in semantic.css. */
+:root {
+  /* Paper — warm neutrals. The light half of the brand. */
+  --bx-paper: #FBFAF8;
+  --bx-bone: #F4F1EC;
+  --bx-sand: #E8E3DA;
+  --bx-clay: #D9D3C8;
+
+  /* Slate — cool mid neutrals for text and rules. */
+  --bx-slate-300: #B4BCC5;
+  --bx-slate-400: #8C97A3;
+  --bx-slate-500: #6E7A87;
+  --bx-slate-600: #56616D;
+  --bx-slate-700: #3D4854;
+  --bx-slate-800: #2A3642;
+
+  /* Navy — the primary brand ink and the dark surface family. */
+  --bx-navy-700: #1B3A55;
+  --bx-navy-800: #12293D;
+  --bx-navy-900: #0B1B2B;
+  --bx-navy-950: #06111C;
+
+  /* Signal — the single accent, sampled from the X block in BxLogo.png (#3C7724). */
+  --bx-signal-100: #E9F1E3;
+  --bx-signal-300: #86B36C;
+  --bx-signal-500: #3C7724;
+  --bx-signal-600: #2F601A;
+  --bx-signal-700: #234A12;
+
+  /* Brass — quiet secondary accent for proprietary-tool and premium moments. */
+  --bx-brass-100: #F4EBD9;
+  --bx-brass-500: #B8873B;
+  --bx-brass-600: #976C2A;
+
+  /* Semantic hues. */
+  --bx-positive-100: #DFF0E9;
+  --bx-positive-500: #17795B;
+  --bx-positive-600: #0F5F47;
+  --bx-negative-100: #FBE4E2;
+  --bx-negative-500: #B3261E;
+  --bx-negative-600: #911D17;
+  --bx-info-100: #E3EAF7;
+  --bx-info-500: #2E5AAC;
+  --bx-info-600: #23478A;
+
+  --bx-white: #FFFFFF;
+  --bx-black: #000000;
+}
+
+/* ===== tokens/typography.css ===== */
+/* Brand X Commerce — type scale.
+   Display steps are fluid; text steps are fixed so UI stays predictable. */
+:root {
+  --bx-text-display-1: clamp(44px, 6.2vw, 82px);
+  --bx-text-display-2: clamp(36px, 4.6vw, 60px);
+  --bx-text-display-3: clamp(30px, 3.4vw, 44px);
+  --bx-text-title-1: 32px;
+  --bx-text-title-2: 26px;
+  --bx-text-title-3: 21px;
+  --bx-text-lead: 19px;
+  --bx-text-body: 16px;
+  --bx-text-sm: 14.5px;
+  --bx-text-xs: 13px;
+  --bx-text-eyebrow: 11.5px;
+
+  --bx-leading-tight: 0.98;
+  --bx-leading-snug: 1.12;
+  --bx-leading-title: 1.2;
+  --bx-leading-body: 1.58;
+  --bx-leading-loose: 1.7;
+
+  --bx-tracking-display: -0.032em;
+  --bx-tracking-title: -0.018em;
+  --bx-tracking-body: -0.006em;
+  --bx-tracking-eyebrow: 0.14em;
+  --bx-tracking-mono: 0.02em;
+
+  --bx-weight-regular: 400;
+  --bx-weight-medium: 500;
+  --bx-weight-semibold: 600;
+  --bx-weight-bold: 700;
+  --bx-weight-black: 800;
+
+  --bx-measure-narrow: 46ch;
+  --bx-measure-body: 62ch;
+  --bx-measure-wide: 76ch;
+}
+
+/* ===== tokens/spacing.css ===== */
+/* Brand X Commerce — 4px base spacing scale. */
+:root {
+  --bx-space-0: 0px;
+  --bx-space-1: 2px;
+  --bx-space-2: 4px;
+  --bx-space-3: 8px;
+  --bx-space-4: 12px;
+  --bx-space-5: 16px;
+  --bx-space-6: 20px;
+  --bx-space-7: 24px;
+  --bx-space-8: 32px;
+  --bx-space-9: 40px;
+  --bx-space-10: 48px;
+  --bx-space-11: 64px;
+  --bx-space-12: 80px;
+  --bx-space-13: 96px;
+  --bx-space-14: 128px;
+
+  --bx-gutter: 24px;
+  --bx-container: 1200px;
+  --bx-container-narrow: 860px;
+  --bx-section-y: clamp(64px, 8vw, 128px); /* @kind spacing */
+}
+
+/* ===== tokens/radius.css ===== */
+/* Brand X Commerce — corner radii. Restrained by design: squared-off reads as operator, not consumer app. */
+:root {
+  --bx-radius-none: 0px;
+  --bx-radius-xs: 2px;
+  --bx-radius-sm: 4px;
+  --bx-radius-md: 6px;
+  --bx-radius-lg: 10px;
+  --bx-radius-xl: 14px;
+  --bx-radius-pill: 999px;
+
+  --bx-radius-control: 4px;
+  --bx-radius-card: 6px;
+  --bx-radius-panel: 10px;
+}
+
+/* ===== tokens/elevation.css ===== */
+/* Brand X Commerce — elevation. Shadows are navy-tinted and low-spread; borders do most of the work. */
+:root {
+  --bx-shadow-none: none;
+  --bx-shadow-hairline: 0 0 0 1px rgba(11, 27, 43, 0.08);
+  --bx-shadow-sm: 0 1px 2px rgba(11, 27, 43, 0.06), 0 0 0 1px rgba(11, 27, 43, 0.06);
+  --bx-shadow-md: 0 2px 6px rgba(11, 27, 43, 0.07), 0 0 0 1px rgba(11, 27, 43, 0.06);
+  --bx-shadow-lg: 0 12px 28px -8px rgba(11, 27, 43, 0.18), 0 0 0 1px rgba(11, 27, 43, 0.06);
+  --bx-shadow-xl: 0 28px 60px -16px rgba(11, 27, 43, 0.28);
+  --bx-shadow-inset-top: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  --bx-shadow-focus: 0 0 0 3px rgba(60, 119, 36, 0.30);
+
+  --bx-border-width: 1px;
+  --bx-border-width-strong: 2px;
+  --bx-rule: 1px solid var(--border-subtle);
+}
+
+/* ===== tokens/motion.css ===== */
+/* Brand X Commerce — motion. Short, flat, no bounce. */
+:root {
+  --bx-duration-instant: 80ms; /* @kind other */
+  --bx-duration-fast: 130ms; /* @kind other */
+  --bx-duration-base: 190ms; /* @kind other */
+  --bx-duration-slow: 280ms; /* @kind other */
+  --bx-duration-reveal: 460ms; /* @kind other */
+
+  --bx-ease-standard: cubic-bezier(0.2, 0.7, 0.3, 1); /* @kind other */
+  --bx-ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --bx-ease-in: cubic-bezier(0.5, 0, 0.9, 0.3); /* @kind other */
+
+  --bx-transition-control: color var(--bx-duration-fast) var(--bx-ease-standard), background-color var(--bx-duration-fast) var(--bx-ease-standard), border-color var(--bx-duration-fast) var(--bx-ease-standard), box-shadow var(--bx-duration-fast) var(--bx-ease-standard); /* @kind other */
+  --bx-lift: translateY(-1px); /* @kind other */
+  --bx-press: translateY(0.5px); /* @kind other */
+}
+
+/* ===== tokens/semantic.css ===== */
+/* Brand X Commerce — semantic aliases. Components reference ONLY these, never the raw ramps. */
+:root {
+  /* Text */
+  --text-primary: var(--bx-navy-900);
+  --text-secondary: var(--bx-slate-600);
+  --text-muted: var(--bx-slate-500);
+  --text-faint: var(--bx-slate-400);
+  --text-inverse: var(--bx-paper);
+  --text-inverse-secondary: rgba(251, 250, 248, 0.68);
+  --text-accent: var(--bx-signal-600);
+  --text-on-accent: var(--bx-white);
+  --text-positive: var(--bx-positive-600);
+  --text-negative: var(--bx-negative-600);
+  --text-link: var(--bx-signal-600);
+  --text-link-hover: var(--bx-signal-700);
+
+  /* Surfaces */
+  --surface-page: var(--bx-paper);
+  --surface-sunken: var(--bx-bone);
+  --surface-card: var(--bx-white);
+  --surface-raised: var(--bx-white);
+  --surface-quiet: var(--bx-sand);
+  --surface-ink: var(--bx-navy-900);
+  --surface-ink-deep: var(--bx-navy-950);
+  --surface-ink-raised: var(--bx-navy-800);
+  --surface-accent: var(--bx-signal-500);
+  --surface-accent-quiet: var(--bx-signal-100);
+  --surface-brass-quiet: var(--bx-brass-100);
+  --surface-overlay: rgba(6, 17, 28, 0.62);
+
+  /* Borders */
+  --border-subtle: var(--bx-clay);
+  --border-quiet: rgba(11, 27, 43, 0.1);
+  --border-strong: var(--bx-slate-400);
+  --border-ink: var(--bx-navy-900);
+  --border-on-ink: rgba(251, 250, 248, 0.16);
+  --border-accent: var(--bx-signal-500);
+  --focus-ring: var(--bx-signal-500);
+
+  /* Type roles */
+  --font-display: var(--bx-font-display);
+  --font-body: var(--bx-font-body);
+  --font-mono: var(--bx-font-mono);
+  --text-eyebrow-tracking: var(--bx-tracking-eyebrow);
+
+  /* Component defaults */
+  --control-height: 44px;
+  --control-height-sm: 34px;
+  --control-height-lg: 52px;
+  --control-padding-x: 18px;
+  --card-padding: 28px;
+}
+
+/* ===== tokens/base.css ===== */
+/* Brand X Commerce — minimal element defaults. Consumers get these for free from styles.css. */
+*, *::before, *::after { box-sizing: border-box }
+body { margin: 0; background: var(--surface-page); color: var(--text-primary); font-family: var(--font-body); font-size: var(--bx-text-body); line-height: var(--bx-leading-body); letter-spacing: var(--bx-tracking-body); -webkit-font-smoothing: antialiased; text-wrap: pretty }
+h1, h2, h3, h4, h5 { font-family: var(--font-display); font-weight: var(--bx-weight-bold); letter-spacing: var(--bx-tracking-title); line-height: var(--bx-leading-title); margin: 0; text-wrap: balance }
+p { margin: 0 }
+a { color: var(--text-link); text-decoration: none; border-bottom: 1px solid rgba(60, 119, 36, 0.38); transition: var(--bx-transition-control) }
+a:hover { color: var(--text-link-hover); border-bottom-color: var(--bx-signal-600) }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px }
+code, kbd, samp { font-family: var(--font-mono); font-size: 0.92em; letter-spacing: var(--bx-tracking-mono) }
+hr { border: 0; border-top: 1px solid var(--border-subtle); margin: var(--bx-space-8) 0 }
+::selection { background: var(--bx-signal-500); color: var(--bx-white) }
+@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important } }
