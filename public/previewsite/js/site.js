@@ -40,7 +40,27 @@
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(payload)
       });
-      if (!res.ok) throw new Error('bad response');
+
+      /* Formspree explains its refusals in the response body (form disabled,
+         monthly limit reached, domain not allowed, needs confirmation…).
+         Surface that instead of a generic failure, or we are debugging blind. */
+      if (!res.ok) {
+        var detail = '';
+        try {
+          var body = await res.json();
+          detail = (body.errors || []).map(function (x) {
+            return (x.field ? x.field + ': ' : '') + x.message;
+          }).join('; ') || body.error || JSON.stringify(body);
+        } catch (parseErr) {
+          try { detail = await res.text(); } catch (textErr) { detail = ''; }
+        }
+        console.error('[lead-form] Formspree rejected the submission', {
+          status: res.status, statusText: res.statusText, detail: detail, endpoint: form.action
+        });
+        var e = new Error(detail || ('HTTP ' + res.status));
+        e.status = res.status;
+        throw e;
+      }
 
       var first = (payload.name || '').trim().split(/\s+/)[0];
       var card = form.closest('.bx-card') || form;
@@ -60,8 +80,13 @@
     } catch (err) {
       btn.disabled = false;
       btn.innerHTML = label;
+      console.error('[lead-form] submit failed', err);
       if (fine) {
-        fine.textContent = 'Something went wrong sending the form. Please email hello@brandxcommerce.com.';
+        var why = err && err.message ? err.message : 'the request could not be sent';
+        fine.innerHTML =
+          'We couldn’t send that — please email ' +
+          '<a href="mailto:hello@brandxcommerce.com">hello@brandxcommerce.com</a> instead.' +
+          '<br><span style="opacity:.75">(' + String(why).replace(/[<>&]/g, '') + ')</span>';
         fine.style.color = 'var(--bx-negative-500)';
       }
     }
