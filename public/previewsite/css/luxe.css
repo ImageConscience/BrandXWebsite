@@ -1,0 +1,167 @@
+/* Brand X Commerce — "luxe" home page variant.
+
+   An exploration, not a replacement. It loads the same tokens and component
+   CSS as the rest of the site, then layers a more editorial treatment on top:
+   a near-black ground, hairlines instead of card chrome, the display face set
+   lighter and larger, wider-tracked labels, and brass promoted from a
+   tools-only accent to the page's metal.
+
+   Scoped entirely under .luxe so no other page can be affected. */
+
+.luxe {
+  --luxe-ink: #06111C;          /* deeper than navy-900 — reads as black without going flat */
+  --luxe-ink-soft: #0B1B2B;
+  --luxe-paper: #FBFAF8;
+  --luxe-brass: #B8873B;
+  --luxe-brass-soft: #D9B87A;
+  --luxe-rule-on-ink: rgba(251, 250, 248, 0.14);
+  --luxe-rule-on-paper: rgba(11, 27, 43, 0.14);
+  --luxe-dim-on-ink: rgba(251, 250, 248, 0.62);
+  --luxe-dim-on-paper: rgba(11, 27, 43, 0.60);
+  --luxe-gutter: clamp(24px, 6vw, 88px);
+  --luxe-band: clamp(88px, 12vw, 190px);
+  background: var(--luxe-paper);
+}
+
+/* ---- bands ---------------------------------------------------------- */
+.luxe-band { padding: var(--luxe-band) 0; }
+.luxe-band--ink { background: var(--luxe-ink); color: var(--luxe-paper); }
+.luxe-band--paper { background: var(--luxe-paper); color: var(--luxe-ink-soft); }
+.luxe-wrap { max-width: 1280px; margin: 0 auto; padding: 0 var(--luxe-gutter); }
+.luxe-wrap--narrow { max-width: 960px; }
+
+/* ---- type ----------------------------------------------------------- */
+/* The display face is set lighter and larger than the main site: at this
+   scale 700 reads as a poster, 500 reads as a magazine. */
+.luxe-display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.042em;
+  line-height: 0.96;
+  margin: 0;
+  text-wrap: balance;
+}
+.luxe-display--xl { font-size: clamp(46px, 8.2vw, 116px); }
+.luxe-display--lg { font-size: clamp(34px, 5vw, 68px); }
+.luxe-display--md { font-size: clamp(26px, 3vw, 40px); letter-spacing: -0.03em; }
+
+.luxe-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;      /* wider than the site's 0.14em — quieter, more formal */
+  margin: 0;
+  color: var(--luxe-brass);
+}
+.luxe-band--paper .luxe-label { color: #8A6526; }
+
+.luxe-lede {
+  font-size: clamp(17px, 1.5vw, 21px);
+  line-height: 1.62;
+  font-weight: 400;
+  margin: 0;
+  max-width: 56ch;
+  text-wrap: pretty;
+}
+.luxe-band--ink .luxe-lede { color: var(--luxe-dim-on-ink); }
+.luxe-band--paper .luxe-lede { color: var(--luxe-dim-on-paper); }
+.luxe-body { font-size: 16px; line-height: 1.72; margin: 0; max-width: 52ch; text-wrap: pretty; }
+.luxe-band--ink .luxe-body { color: var(--luxe-dim-on-ink); }
+.luxe-band--paper .luxe-body { color: var(--luxe-dim-on-paper); }
+
+/* ---- hairlines do the work cards used to ---------------------------- */
+.luxe-rule { height: 1px; border: 0; margin: 0; background: var(--luxe-rule-on-paper); }
+.luxe-band--ink .luxe-rule { background: var(--luxe-rule-on-ink); }
+
+/* ---- hero ----------------------------------------------------------- */
+.luxe-hero { position: relative; min-height: min(92vh, 940px); display: flex; align-items: flex-end; overflow: hidden; background: var(--luxe-ink); }
+.luxe-hero__media { position: absolute; inset: 0; background-size: cover; background-position: center 28%; opacity: 0.16; filter: grayscale(0.55) contrast(1.05); }
+.luxe-hero__scrim { position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(6,17,28,0.82) 0%, rgba(6,17,28,0.62) 38%, rgba(6,17,28,0.96) 100%); }
+.luxe-hero__inner { position: relative; width: 100%; padding-top: clamp(120px, 18vh, 220px); padding-bottom: clamp(40px, 6vh, 72px); }
+.luxe-hero__accent { width: 64px; height: 2px; background: var(--luxe-brass); margin-bottom: 26px; }
+
+/* ---- stat rail ------------------------------------------------------ */
+.luxe-rail { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 0; margin-top: clamp(48px, 7vw, 92px); border-top: 1px solid var(--luxe-rule-on-ink); }
+.luxe-band--paper .luxe-rail, .luxe-rail--paper { border-top-color: var(--luxe-rule-on-paper); }
+.luxe-rail__cell { padding: 30px 30px 6px 0; border-right: 1px solid var(--luxe-rule-on-ink); }
+.luxe-rail--paper .luxe-rail__cell { border-right-color: var(--luxe-rule-on-paper); }
+.luxe-rail__cell:last-child { border-right: 0; }
+.luxe-rail__value { font-family: var(--font-display); font-weight: 500; font-size: clamp(30px, 3.4vw, 46px); letter-spacing: -0.035em; line-height: 1; }
+.luxe-rail__label { font-size: 13px; line-height: 1.5; margin: 12px 0 0; max-width: 24ch; }
+.luxe-band--ink .luxe-rail__label { color: var(--luxe-dim-on-ink); }
+.luxe-rail--paper .luxe-rail__label { color: var(--luxe-dim-on-paper); }
+
+/* ---- editorial rows (pillars, arguments) ---------------------------- */
+.luxe-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(24px, 4vw, 72px);
+  padding: clamp(40px, 5vw, 68px) 0; border-top: 1px solid var(--luxe-rule-on-paper); align-items: start; }
+.luxe-band--ink .luxe-row { border-top-color: var(--luxe-rule-on-ink); }
+.luxe-row__index { font-family: var(--font-display); font-weight: 500; font-size: clamp(40px, 4.6vw, 64px);
+  line-height: 0.9; letter-spacing: -0.04em; color: var(--luxe-brass); margin: 0 0 18px; }
+.luxe-row__list { list-style: none; margin: 26px 0 0; padding: 0; }
+.luxe-row__list li { position: relative; padding: 11px 0 11px 22px; font-size: 14.5px; line-height: 1.5;
+  border-top: 1px solid var(--luxe-rule-on-paper); }
+.luxe-band--ink .luxe-row__list li { border-top-color: var(--luxe-rule-on-ink); color: var(--luxe-dim-on-ink); }
+.luxe-band--paper .luxe-row__list li { color: var(--luxe-dim-on-paper); }
+.luxe-row__list li::before { content: ""; position: absolute; left: 0; top: 19px; width: 8px; height: 1px; background: var(--luxe-brass); }
+
+/* ---- links & actions ------------------------------------------------ */
+.luxe-cta { display: inline-flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 600;
+  letter-spacing: 0.02em; padding: 18px 30px; border: 1px solid var(--luxe-brass); color: var(--luxe-brass);
+  background: transparent; transition: background-color 190ms cubic-bezier(0.2,0.7,0.3,1), color 190ms cubic-bezier(0.2,0.7,0.3,1); }
+.luxe-cta:hover { background: var(--luxe-brass); color: var(--luxe-ink); }
+.luxe-cta--solid { background: var(--luxe-brass); color: var(--luxe-ink); }
+.luxe-cta--solid:hover { background: var(--luxe-brass-soft); border-color: var(--luxe-brass-soft); color: var(--luxe-ink); }
+.luxe-link { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.18em; font-family: var(--font-mono); color: var(--luxe-brass);
+  padding-bottom: 6px; border-bottom: 1px solid var(--luxe-rule-on-paper); }
+.luxe-band--ink .luxe-link { border-bottom-color: var(--luxe-rule-on-ink); }
+.luxe-link:hover { color: var(--luxe-brass-soft); border-bottom-color: var(--luxe-brass); }
+
+/* ---- client wall ---------------------------------------------------- */
+.luxe-clients { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); align-items: center; gap: 0; }
+.luxe-clients__cell { display: grid; place-items: center; padding: 34px 22px; border-right: 1px solid var(--luxe-rule-on-paper); }
+.luxe-clients__cell:last-child { border-right: 0; }
+.luxe-clients img { max-height: 26px; max-width: 100%; width: auto; height: auto; object-fit: contain;
+  filter: grayscale(1); opacity: 0.68; transition: opacity 190ms, filter 190ms; }
+/* The Sown Again mark ships in a 1920x1080 frame with generous internal
+   margin, so it reads small next to marks that are cropped tight. A modest
+   bump evens out the optical weight across the row. */
+.luxe-clients img.luxe-clients__img--inset { max-height: 38px; }
+.luxe-clients__cell:hover img { filter: grayscale(0); opacity: 1; }
+
+/* ---- pull quote ----------------------------------------------------- */
+.luxe-quote { max-width: 22ch; }
+
+/* ---- header tweak for the variant ----------------------------------- */
+.luxe .bx-hdr { position: fixed; top: 0; left: 0; right: 0; background: transparent; border-bottom-color: transparent; }
+/* The hero clears the fixed header with its own top padding. Once scrolled the
+   header takes its dark backing, so the inverted logo stays legible over the
+   light bands further down. */
+.luxe .bx-hdr__link { color: rgba(251,250,248,0.72); }
+.luxe .bx-hdr__link:hover { color: var(--luxe-paper); }
+.luxe .bx-hdr--scrolled { background: rgba(6,17,28,0.88); border-bottom-color: var(--luxe-rule-on-ink); }
+.luxe .bx-hdr__brand img { filter: brightness(0) invert(1); }
+
+@media (max-width: 720px) {
+  .luxe-rail__cell { border-right: 0; border-bottom: 1px solid var(--luxe-rule-on-ink); padding-right: 0; }
+  .luxe-rail--paper .luxe-rail__cell { border-bottom-color: var(--luxe-rule-on-paper); }
+  .luxe-clients__cell { border-right: 0; border-bottom: 1px solid var(--luxe-rule-on-paper); }
+}
+@media (prefers-reduced-motion: reduce) { .luxe * { transition-duration: 0.01ms !important; } }
+
+/* The design system's green primary button fights the brass. Restyle just the
+   header CTA inside the variant; the green stays the brand's action colour
+   everywhere else on the site. */
+.luxe .bx-hdr__cta .bx-btn--primary {
+  background: transparent;
+  border: 1px solid var(--luxe-brass);
+  color: var(--luxe-brass);
+  border-radius: 0;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 12px 22px;
+}
+.luxe .bx-hdr__cta .bx-btn--primary:hover { background: var(--luxe-brass); color: var(--luxe-ink); }
+.luxe .bx-hdr--scrolled .bx-hdr__cta .bx-btn--primary { border-color: var(--luxe-brass); }
