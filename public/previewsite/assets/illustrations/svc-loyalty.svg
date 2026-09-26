@@ -18,40 +18,40 @@
   <g filter="url(#loyShadow)">
     <rect x="20" y="22" width="200" height="120" rx="12" fill="url(#loyCard)"/>
     <ellipse cx="178" cy="40" rx="50" ry="30" fill="#ffffff" opacity="0.12"/>
-    <text x="34" y="44" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#E9F1E3" letter-spacing="0.7">LOYALEST · INSIDER</text>
-    <text x="34" y="78" font-family="Poppins, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="-1">2,400 pts</text>
+    <text x="34" y="44" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#E9F1E3" letter-spacing="0.7">LOYALEST · INSIDER</text>
+    <text x="34" y="78" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="-1">2,400 pts</text>
     <rect x="34" y="90" width="148" height="6" rx="3" fill="rgba(255,255,255,0.18)"/>
     <rect x="34" y="90" width="100" height="6" rx="3" fill="#E9F1E3"/>
-    <text x="34" y="114" font-family="Inter, sans-serif" font-size="8" fill="rgba(255,255,255,0.78)">Next reward in 600 pts</text>
+    <text x="34" y="114" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="rgba(255,255,255,0.78)">Next reward in 600 pts</text>
     <circle cx="186" cy="116" r="14" fill="#E9F1E3"/>
-    <text x="186" y="121" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#234A12">★</text>
+    <text x="186" y="121" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#234A12">★</text>
   </g>
 
   <!-- Engagement comparison -->
   <g filter="url(#loyShadow)">
     <rect x="232" y="22" width="148" height="156" rx="12" fill="#ffffff" stroke="#E8E3DA"/>
-    <text x="246" y="42" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#56616D" letter-spacing="0.6">ACTIVE ENGAGEMENT</text>
+    <text x="246" y="42" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#56616D" letter-spacing="0.6">ACTIVE ENGAGEMENT</text>
 
-    <text x="246" y="68" font-family="Inter, sans-serif" font-size="8" fill="#56616D">Industry typical</text>
+    <text x="246" y="68" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">Industry typical</text>
     <rect x="246" y="74" width="120" height="12" rx="6" fill="#F4F1EC"/>
     <rect x="246" y="74" width="14" height="12" rx="6" fill="#0B1B2B" opacity="0.45"/>
-    <text x="370" y="84" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0B1B2B">3-5%</text>
+    <text x="370" y="84" text-anchor="end" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#0B1B2B">3-5%</text>
 
-    <text x="246" y="108" font-family="Inter, sans-serif" font-size="8" fill="#56616D">Loyalest</text>
+    <text x="246" y="108" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">Loyalest</text>
     <rect x="246" y="114" width="120" height="12" rx="6" fill="#F4F1EC"/>
     <rect x="246" y="114" width="80" height="12" rx="6" fill="#3C7724"/>
-    <text x="370" y="124" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#3C7724">~20%</text>
+    <text x="370" y="124" text-anchor="end" font-family="Instrument Sans, Helvetica, sans-serif" font-size="9" font-weight="800" fill="#3C7724">~20%</text>
 
     <line x1="246" y1="140" x2="366" y2="140" stroke="#E8E3DA"/>
-    <text x="246" y="158" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0B1B2B">~4× the category</text>
-    <text x="246" y="171" font-family="Inter, sans-serif" font-size="8" fill="#56616D">average engagement</text>
+    <text x="246" y="158" font-family="Instrument Sans, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0B1B2B">~4× the category</text>
+    <text x="246" y="171" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">average engagement</text>
   </g>
 
   <!-- Reward unlocked tag -->
   <g filter="url(#loyShadow)" transform="translate(20, 152)">
     <rect x="0" y="0" width="200" height="26" rx="13" fill="#ffffff" stroke="#E9F1E3"/>
     <circle cx="14" cy="13" r="5" fill="#3C7724"/>
-    <text x="14" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="800" fill="#fff">✓</text>
-    <text x="26" y="17" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#0B1B2B">Free shipping unlocked · used in 4d</text>
+    <text x="14" y="16" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="800" fill="#fff">✓</text>
+    <text x="26" y="17" font-family="Instrument Sans, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#0B1B2B">Free shipping unlocked · used in 4d</text>
   </g>
 </svg>

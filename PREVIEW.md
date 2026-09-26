@@ -13,7 +13,8 @@ revised or thrown away without any risk to the live site.
 | --- | --- |
 | Home | `index.html` |
 | Growth Marketing | `growth-marketing.html` |
-| Shopify Support | `shopify-support.html` |
+| How We Work | `how-we-work.html` |
+| Commerce Operations | `commerce-operations.html` |
 | CRM | `crm.html` |
 | Our Tools | `tools.html` |
 | Case Studies | `case-studies.html` |
@@ -66,28 +67,19 @@ without JavaScript.
 
 ## Service-card illustrations
 
-The design handoff shipped the nine service cards on the three pillar pages with
-empty plates ("illustration pending — source asset not vendored"). These are
-filled from the existing image library (`public/images/svc-*.svg`), recolored
-from the old palette to the new design tokens (navy `#0B1B2B`, signal green
-`#3C7724`, warm paper) and copied to `assets/illustrations/`. The originals in
-`public/images/` are untouched.
+The design handoff shipped the service cards on the pillar pages with empty
+plates ("illustration pending — source asset not vendored"). Six are filled
+from the existing image library (`public/images/svc-*.svg`), recolored from the
+old palette to the new design tokens and copied to `assets/illustrations/`. The
+originals in `public/images/` are untouched.
 
-| Card | Illustration | Fit |
-| --- | --- | --- |
-| Paid acquisition | `svc-growth.svg` | exact |
-| Measurement & planning | `svc-cro.svg` | exact |
-| AI discovery readiness | `svc-ai.svg` | exact |
-| Development & replatforms | `svc-web.svg` | exact |
-| Infrastructure & integrations | `svc-strategy.svg` | **approximate** |
-| CRO & business intelligence | `svc-cro.svg` | exact |
-| Email & SMS production | `svc-strategy.svg` | **approximate** |
-| Lifecycle & segmentation | `svc-cro.svg` | **approximate** |
-| Loyalty & retention planning | `svc-loyalty.svg` | exact |
+Five more were drawn in the same house style to cover work the old library had
+no asset for — `svc-integrations`, `svc-pim`, `svc-automation`, `svc-bi` and
+`svc-email`. All eleven plates are 400×200, use the token palette, and are set
+in the site's own type (Schibsted Grotesk / Instrument Sans).
 
-The library has six illustrations for nine cards. Six map exactly; the three
-marked approximate reuse the nearest available plate and are the obvious
-candidates for purpose-drawn replacements.
+Every service card across the three pillar pages now has a plate that matches
+what it describes, and no plate repeats within a page.
 
 ## Unused assets
 

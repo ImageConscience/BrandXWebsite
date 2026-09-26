@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Business intelligence — one profit and loss view showing contribution margin by channel against a blended target">
+  <defs>
+    <linearGradient id="biBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF8"/><stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="biShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#biBg)"/>
+
+  <!-- Contribution margin by channel -->
+  <g filter="url(#biShadow)">
+    <rect x="20" y="22" width="232" height="158" rx="12" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="34" y="42" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" font-weight="700" fill="#56616D" letter-spacing="0.7">CONTRIBUTION MARGIN · BY CHANNEL</text>
+    <g font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">
+      <text x="34" y="63">Paid search</text>
+      <rect x="110" y="55" width="128" height="10" rx="5" fill="#F4F1EC"/>
+      <rect x="110" y="55" width="94" height="10" rx="5" fill="#3C7724"/>
+      <text x="238" y="63" text-anchor="end" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#0B1B2B">44%</text>
+
+      <text x="34" y="87">Paid social</text>
+      <rect x="110" y="79" width="128" height="10" rx="5" fill="#F4F1EC"/>
+      <rect x="110" y="79" width="66" height="10" rx="5" fill="#86B36C"/>
+      <text x="238" y="87" text-anchor="end" font-size="8" font-weight="700" fill="#0B1B2B">31%</text>
+
+      <text x="34" y="111">Email &amp; SMS</text>
+      <rect x="110" y="103" width="128" height="10" rx="5" fill="#F4F1EC"/>
+      <rect x="110" y="103" width="111" height="10" rx="5" fill="#3C7724"/>
+      <text x="238" y="111" text-anchor="end" font-size="8" font-weight="700" fill="#0B1B2B">52%</text>
+
+      <text x="34" y="135">Retail media</text>
+      <rect x="110" y="127" width="128" height="10" rx="5" fill="#F4F1EC"/>
+      <rect x="110" y="127" width="41" height="10" rx="5" fill="#D9D3C8"/>
+      <text x="238" y="135" text-anchor="end" font-size="8" font-weight="700" fill="#56616D">19%</text>
+    </g>
+    <line x1="34" y1="150" x2="238" y2="150" stroke="#E8E3DA"/>
+    <text x="34" y="168" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">Blended target</text>
+    <text x="238" y="168" text-anchor="end" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#3C7724">38%</text>
+  </g>
+
+  <!-- One P&L tile -->
+  <g filter="url(#biShadow)" transform="translate(264, 22)">
+    <rect x="0" y="0" width="116" height="158" rx="12" fill="#0B1B2B"/>
+    <rect x="14" y="14" width="64" height="17" rx="8.5" fill="#E9F1E3"/>
+    <text x="46" y="26" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" font-weight="800" fill="#234A12">ONE P&amp;L VIEW</text>
+    <text x="14" y="52" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)">Net contribution</text>
+    <text x="14" y="74" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#ffffff" letter-spacing="-0.9">$312k</text>
+    <line x1="14" y1="86" x2="102" y2="86" stroke="rgba(255,255,255,0.14)"/>
+    <g font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5">
+      <text x="14" y="104" fill="rgba(255,255,255,0.7)">Marketing</text>
+      <text x="102" y="104" text-anchor="end" font-weight="700" fill="#fff">$186k</text>
+      <text x="14" y="122" fill="rgba(255,255,255,0.7)">Site &amp; CRO</text>
+      <text x="102" y="122" text-anchor="end" font-weight="700" fill="#fff">$84k</text>
+      <text x="14" y="140" fill="rgba(255,255,255,0.7)">Retention</text>
+      <text x="102" y="140" text-anchor="end" font-weight="700" fill="#9CC784">$42k</text>
+    </g>
+  </g>
+</svg>

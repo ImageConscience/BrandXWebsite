@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Product information management — one structured product record syndicating complete attributes to the storefront, channel feeds and AI surfaces">
+  <defs>
+    <linearGradient id="pimBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF8"/><stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="pimSwatch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E9F1E3"/><stop offset="1" stop-color="#86B36C"/>
+    </linearGradient>
+    <filter id="pimShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#pimBg)"/>
+
+  <!-- Master product record -->
+  <g filter="url(#pimShadow)">
+    <rect x="20" y="24" width="196" height="156" rx="12" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="34" y="44" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" font-weight="700" fill="#56616D" letter-spacing="0.7">MASTER RECORD</text>
+    <rect x="34" y="52" width="42" height="42" rx="8" fill="url(#pimSwatch)"/>
+    <text x="86" y="66" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">Trail Runner Pro</text>
+    <text x="86" y="79" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">SKU TRP-140 · 24 variants</text>
+    <rect x="86" y="85" width="52" height="13" rx="6.5" fill="#E9F1E3"/>
+    <text x="112" y="94.5" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#234A12">COMPLETE</text>
+
+    <line x1="34" y1="108" x2="202" y2="108" stroke="#E8E3DA"/>
+    <g font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">
+      <path d="M34,120 l3.5,3.5 l7,-7" stroke="#3C7724" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="124">Attributes &amp; specs</text>
+      <path d="M34,140 l3.5,3.5 l7,-7" stroke="#3C7724" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="144">Copy &amp; translations</text>
+      <path d="M34,160 l3.5,3.5 l7,-7" stroke="#3C7724" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="164">Imagery &amp; rich media</text>
+    </g>
+  </g>
+
+  <!-- Syndication rails -->
+  <g stroke="#86B36C" stroke-width="1.6" fill="none">
+    <path d="M216,70 H236 V56 H252"/>
+    <path d="M216,102 H252"/>
+    <path d="M216,134 H236 V148 H252"/>
+  </g>
+
+  <!-- Destinations -->
+  <g filter="url(#pimShadow)">
+    <rect x="258" y="38" width="122" height="36" rx="9" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="272" y="55" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">Storefront</text>
+    <text x="272" y="66" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#56616D">PDP &amp; collections</text>
+
+    <rect x="258" y="84" width="122" height="36" rx="9" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="272" y="101" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">Channel feeds</text>
+    <text x="272" y="112" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#56616D">Google · Meta · retail</text>
+
+    <rect x="258" y="130" width="122" height="36" rx="9" fill="#0B1B2B"/>
+    <text x="272" y="147" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" letter-spacing="-0.3">AI surfaces</text>
+    <text x="272" y="158" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#9CC784">legible &amp; citable</text>
+  </g>
+</svg>

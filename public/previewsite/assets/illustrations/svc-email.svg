@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Email and SMS production — a campaign build alongside an SMS send, with open, click and revenue-per-recipient results">
+  <defs>
+    <linearGradient id="emlBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF8"/><stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="emlHero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E9F1E3"/><stop offset="1" stop-color="#86B36C"/>
+    </linearGradient>
+    <filter id="emlShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#emlBg)"/>
+
+  <!-- Email build -->
+  <g filter="url(#emlShadow)">
+    <rect x="20" y="22" width="150" height="158" rx="12" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="34" y="40" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.6">CAMPAIGN · KLAVIYO</text>
+    <rect x="34" y="48" width="122" height="46" rx="7" fill="url(#emlHero)"/>
+    <text x="42" y="86" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0B1B2B">Spring drop</text>
+    <rect x="34" y="102" width="98" height="6" rx="3" fill="#E8E3DA"/>
+    <rect x="34" y="114" width="122" height="6" rx="3" fill="#E8E3DA"/>
+    <rect x="34" y="126" width="80" height="6" rx="3" fill="#E8E3DA"/>
+    <rect x="34" y="144" width="66" height="20" rx="4" fill="#3C7724"/>
+    <text x="67" y="157.5" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" font-weight="700" fill="#ffffff">Shop now</text>
+  </g>
+
+  <!-- SMS -->
+  <g filter="url(#emlShadow)">
+    <rect x="182" y="22" width="198" height="62" rx="12" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="196" y="40" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.6">SMS · SEGMENT: VIP</text>
+    <rect x="196" y="48" width="140" height="24" rx="12" fill="#0B1B2B"/>
+    <text x="208" y="63.5" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#ffffff">Early access opens at 9am</text>
+  </g>
+
+  <!-- Results -->
+  <g filter="url(#emlShadow)">
+    <rect x="182" y="92" width="62" height="88" rx="10" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="194" y="110" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.5">OPEN</text>
+    <text x="194" y="132" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0B1B2B" letter-spacing="-0.6">54%</text>
+    <rect x="194" y="142" width="38" height="6" rx="3" fill="#E9F1E3"/>
+    <rect x="194" y="142" width="28" height="6" rx="3" fill="#3C7724"/>
+    <text x="194" y="166" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" fill="#3C7724" font-weight="600">+9 pts</text>
+
+    <rect x="250" y="92" width="62" height="88" rx="10" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="262" y="110" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.5">CLICK</text>
+    <text x="262" y="132" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#0B1B2B" letter-spacing="-0.6">7.2%</text>
+    <rect x="262" y="142" width="38" height="6" rx="3" fill="#E9F1E3"/>
+    <rect x="262" y="142" width="22" height="6" rx="3" fill="#3C7724"/>
+    <text x="262" y="166" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" fill="#3C7724" font-weight="600">+1.8 pts</text>
+
+    <rect x="318" y="92" width="62" height="88" rx="10" fill="#0B1B2B"/>
+    <text x="330" y="110" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#9CC784" letter-spacing="0.5">REV / RCPT</text>
+    <text x="330" y="132" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="-0.6">$1.41</text>
+    <rect x="330" y="142" width="38" height="6" rx="3" fill="rgba(255,255,255,0.14)"/>
+    <rect x="330" y="142" width="32" height="6" rx="3" fill="#9CC784"/>
+    <text x="330" y="166" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" fill="#9CC784" font-weight="600">+24%</text>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="AI automation — an automated operations workflow routing an exception end to end, with the manual hours it removes each month">
+  <defs>
+    <linearGradient id="autBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF8"/><stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="autShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#autBg)"/>
+
+  <rect x="20" y="18" width="96" height="16" rx="8" fill="#0B1B2B"/>
+  <text x="68" y="29" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" font-weight="700" fill="#9CC784" letter-spacing="0.6">RUNS UNATTENDED</text>
+
+  <!-- Workflow steps -->
+  <g filter="url(#autShadow)">
+    <rect x="20" y="44" width="96" height="52" rx="10" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="32" y="60" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.6">TRIGGER</text>
+    <text x="32" y="76" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">Stock gap</text>
+    <text x="32" y="88" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#56616D">on a top-20 SKU</text>
+
+    <rect x="142" y="44" width="96" height="52" rx="10" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="154" y="60" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.6">STEP 02</text>
+    <text x="154" y="76" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">Check ERP</text>
+    <text x="154" y="88" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#56616D">inbound PO dates</text>
+
+    <rect x="264" y="44" width="116" height="52" rx="10" fill="#0B1B2B"/>
+    <text x="276" y="60" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#9CC784" letter-spacing="0.6">OUTCOME</text>
+    <text x="276" y="76" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#ffffff" letter-spacing="-0.3">Pause spend</text>
+    <text x="276" y="88" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="rgba(255,255,255,0.7)">&amp; alert the channel</text>
+  </g>
+  <g stroke="#86B36C" stroke-width="1.8" fill="none" stroke-linecap="round">
+    <path d="M116,70 H136"/><path d="M130,65 l6,5 l-6,5"/>
+    <path d="M238,70 H258"/><path d="M252,65 l6,5 l-6,5"/>
+  </g>
+
+  <!-- Result strip -->
+  <g filter="url(#autShadow)">
+    <rect x="20" y="112" width="176" height="68" rx="10" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="34" y="130" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.6">MANUAL HOURS REMOVED</text>
+    <text x="34" y="156" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0B1B2B" letter-spacing="-1">142<tspan font-size="11"> hrs/mo</tspan></text>
+    <rect x="34" y="164" width="148" height="7" rx="3.5" fill="#E9F1E3"/>
+    <rect x="34" y="164" width="118" height="7" rx="3.5" fill="#3C7724"/>
+
+    <rect x="204" y="112" width="176" height="68" rx="10" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="218" y="130" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#56616D" letter-spacing="0.6">EXCEPTIONS HANDLED</text>
+    <g font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">
+      <path d="M218,140 l3.5,3.5 l7,-7" stroke="#3C7724" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="236" y="144">Price &amp; margin guardrails</text>
+      <path d="M218,158 l3.5,3.5 l7,-7" stroke="#3C7724" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="236" y="162">Order &amp; returns routing</text>
+    </g>
+  </g>
+</svg>

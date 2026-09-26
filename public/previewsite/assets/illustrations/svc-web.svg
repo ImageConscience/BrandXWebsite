@@ -24,7 +24,7 @@
     <circle cx="42" cy="31" r="2.5" fill="#D9D3C8"/>
     <circle cx="52" cy="31" r="2.5" fill="#3C7724"/>
     <rect x="138" y="25" width="124" height="12" rx="6" fill="#ffffff" stroke="#E8E3DA"/>
-    <text x="200" y="34" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#56616D">your-store.com/products/...</text>
+    <text x="200" y="34" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" fill="#56616D">your-store.com/products/...</text>
 
     <!-- product image left -->
     <rect x="36" y="58" width="120" height="106" rx="10" fill="url(#webProd)"/>
@@ -32,21 +32,21 @@
     <ellipse cx="76" cy="130" rx="6" ry="9" fill="#234A12" opacity="0.7"/>
 
     <!-- product info right -->
-    <text x="174" y="74" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#3C7724" letter-spacing="0.6">NEW · BESTSELLER</text>
-    <text x="174" y="92" font-family="Poppins, sans-serif" font-size="13" font-weight="600" fill="#0B1B2B" letter-spacing="-0.4">Trail Runner Pro</text>
-    <text x="174" y="108" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0B1B2B">$148.00</text>
-    <text x="362" y="108" text-anchor="end" font-family="Inter, sans-serif" font-size="8" fill="#56616D">★ 4.8</text>
+    <text x="174" y="74" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#3C7724" letter-spacing="0.6">NEW · BESTSELLER</text>
+    <text x="174" y="92" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#0B1B2B" letter-spacing="-0.4">Trail Runner Pro</text>
+    <text x="174" y="108" font-family="Instrument Sans, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#0B1B2B">$148.00</text>
+    <text x="362" y="108" text-anchor="end" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="#56616D">★ 4.8</text>
 
     <!-- size pills -->
     <rect x="174" y="118" width="22" height="16" rx="8" fill="#ffffff" stroke="#E8E3DA"/>
-    <text x="185" y="129" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#56616D">8</text>
+    <text x="185" y="129" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" fill="#56616D">8</text>
     <rect x="200" y="118" width="22" height="16" rx="8" fill="#0B1B2B"/>
-    <text x="211" y="129" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#fff">9</text>
+    <text x="211" y="129" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" font-weight="700" fill="#fff">9</text>
     <rect x="226" y="118" width="22" height="16" rx="8" fill="#ffffff" stroke="#E8E3DA"/>
-    <text x="237" y="129" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#56616D">10</text>
+    <text x="237" y="129" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7" fill="#56616D">10</text>
 
     <!-- ATC -->
     <rect x="174" y="142" width="190" height="22" rx="11" fill="#3C7724"/>
-    <text x="269" y="156" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#ffffff">Add to bag</text>
+    <text x="269" y="156" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="9" font-weight="600" fill="#ffffff">Add to bag</text>
   </g>
 </svg>

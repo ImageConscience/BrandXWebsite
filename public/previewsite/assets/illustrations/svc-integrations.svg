@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" role="img" aria-label="Integrations and ERP — a Shopify storefront syncing orders and inventory with NetSuite ERP, a 3PL and a subscription platform">
+  <defs>
+    <linearGradient id="intBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF8"/><stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="intShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#intBg)"/>
+
+  <!-- Hub: the storefront -->
+  <g filter="url(#intShadow)">
+    <rect x="20" y="42" width="116" height="116" rx="12" fill="#0B1B2B"/>
+    <rect x="34" y="56" width="62" height="18" rx="9" fill="#E9F1E3"/>
+    <text x="65" y="68" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" font-weight="800" fill="#234A12">STOREFRONT</text>
+    <text x="34" y="96" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="-0.4">Shopify</text>
+    <text x="34" y="112" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="-0.4">Plus</text>
+    <line x1="34" y1="124" x2="122" y2="124" stroke="rgba(255,255,255,0.14)"/>
+    <text x="34" y="142" font-family="Instrument Sans, Helvetica, sans-serif" font-size="8" fill="rgba(255,255,255,0.7)">orders · inventory · sync</text>
+  </g>
+
+  <!-- Connector rails -->
+  <g stroke="#86B36C" stroke-width="1.6" fill="none">
+    <path d="M136,74 H160 V60 H176"/>
+    <path d="M136,100 H176"/>
+    <path d="M136,126 H160 V140 H176"/>
+  </g>
+  <g fill="#3C7724">
+    <circle cx="176" cy="60" r="3"/><circle cx="176" cy="100" r="3"/><circle cx="176" cy="140" r="3"/>
+  </g>
+
+  <!-- Connected systems -->
+  <g filter="url(#intShadow)">
+    <rect x="186" y="42" width="194" height="36" rx="9" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="200" y="59" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">NetSuite ERP</text>
+    <text x="200" y="70" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#56616D">financials · purchase orders</text>
+    <path d="M356,58 l4,4 l8,-8" stroke="#3C7724" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="186" y="82" width="194" height="36" rx="9" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="200" y="99" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">3PL &amp; OMS</text>
+    <text x="200" y="110" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#56616D">fulfilment · returns · stock</text>
+    <path d="M356,98 l4,4 l8,-8" stroke="#3C7724" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="186" y="122" width="194" height="36" rx="9" fill="#ffffff" stroke="#E8E3DA"/>
+    <text x="200" y="139" font-family="Schibsted Grotesk, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#0B1B2B" letter-spacing="-0.3">Subscriptions &amp; feeds</text>
+    <text x="200" y="150" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" fill="#56616D">recurring · channel feeds</text>
+    <path d="M356,138 l4,4 l8,-8" stroke="#3C7724" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="20" y="16" width="88" height="16" rx="8" fill="#E9F1E3"/>
+  <text x="64" y="27" text-anchor="middle" font-family="Instrument Sans, Helvetica, sans-serif" font-size="7.5" font-weight="700" fill="#234A12" letter-spacing="0.6">SYNCED · REAL TIME</text>
+</svg>
